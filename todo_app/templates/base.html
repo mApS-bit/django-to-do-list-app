@@ -11,12 +11,12 @@
 </head>
 <body>
     <div>
-        <h1 onclick="location.href='{% url index %}'">
+        <h1 onclick="location.href='{% url "index" %}'">
             Django To-do List
         </h1>
     </div>
     <div>
-        {% blockcontent %}
+        {% block content %}
         This content will be repleace by different html for each page
         {% endblock %}
     </div>
